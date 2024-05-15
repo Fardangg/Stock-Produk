@@ -1,0 +1,127 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+.product-form, .product-list {
+    background: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input[type="text"], input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #5cb85c;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 5px;
+}
+
+.action-buttons button {
+    background-color: #d9534f;
+}
+
+.action-buttons button:first-child {
+    background-color: #5bc0de;
+}
+
+.action-buttons button:hover {
+    opacity: 0.8;
+}
+
+
+
+
+/* Gaya modal */
+.modal {
+    display: none; /* Tetapkan awalnya menjadi none untuk menyembunyikan modal */
+    position: fixed; /* Tetapkan posisi menjadi fixed untuk menjaga modal tetap di tengah layar */
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%; /* Gunakan 100% lebar layar */
+    height: 100%; /* Gunakan 100% tinggi layar */
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4); /* Tambahkan latar belakang semi-transparan untuk efek gelap */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* Atur margin atas dan bawah agar kotak pop-up berada di tengah layar */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Atur lebar kotak pop-up */
+    animation: fadeIn 0.3s ease-out;
+    border-radius: 5px; /* Tambahkan radius sudut untuk tampilan yang lebih baik */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
